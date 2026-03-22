@@ -1,0 +1,82 @@
+---
+const technicalSkills = ['HTML', 'CSS', 'JavaScript', 'MERN Stack', 'Full Stack Development', 'Machine Learning', 'AI Automation'];
+const softSkills = ['Agile Methodologies', 'Code Review', 'Problem Solving', 'Fluent Communication in English'];
+const tools = ['TensorFlow', 'VS Code', 'Git', 'Version Control'];
+---
+
+<section id="skills" class="relative px-6 py-32">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 inline-block relative">
+        Skills & Technologies
+        <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 rounded-full animate-gradient-x"></div>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Technical Skills -->
+      <div class="group">
+        <div class="bg-gradient-to-br from-slate-700/80 to-slate-800/80 rounded-2xl p-8 backdrop-blur-xl border border-slate-600/50 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2">
+          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            Technical Skills
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            {technicalSkills.map((skill) => (
+              <span class="px-5 py-2.5 bg-gradient-to-r from-blue-600/20 to-blue-500/20 text-blue-300 rounded-xl font-semibold hover:from-blue-600 hover:to-blue-500 hover:text-white transition-all duration-300 cursor-default hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="group">
+        <div class="bg-gradient-to-br from-slate-700/80 to-slate-800/80 rounded-2xl p-8 backdrop-blur-xl border border-slate-600/50 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 hover:-translate-y-2">
+          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            Soft Skills
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            {softSkills.map((skill) => (
+              <span class="px-5 py-2.5 bg-gradient-to-r from-purple-600/20 to-purple-500/20 text-purple-300 rounded-xl font-semibold hover:from-purple-600 hover:to-purple-500 hover:text-white transition-all duration-300 cursor-default hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="group md:col-span-2">
+        <div class="bg-gradient-to-br from-slate-700/80 to-slate-800/80 rounded-2xl p-8 backdrop-blur-xl border border-slate-600/50 hover:border-green-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2">
+          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            Tools & Software
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            {tools.map((tool) => (
+              <span class="px-5 py-2.5 bg-gradient-to-r from-green-600/20 to-emerald-500/20 text-green-300 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-500 hover:text-white transition-all duration-300 cursor-default hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
+                {tool}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

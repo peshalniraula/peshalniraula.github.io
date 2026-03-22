@@ -1,0 +1,24 @@
+---
+// This component renders client-side only
+---
+
+<div id="progress-bar" class="fixed top-16 left-0 w-full h-1 bg-slate-800 z-40">
+  <div
+    id="progress-fill"
+    class="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 transition-all duration-300 ease-out"
+    style="width: 0%"
+  ></div>
+</div>
+
+<script>
+  const fill = document.getElementById('progress-fill');
+
+  function updateProgress() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+    if (fill) fill.style.width = `${scrolled}%`;
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+</script>
